@@ -18,11 +18,12 @@ public class clickBehaviour : MonoBehaviour
         
     }
 
-    void OnMouseDown()
+    void OnMouseUp()
     {
         nameofobj = gameObject.name;
         Debug.Log(nameofobj);
         Destroy(gameObject);
         Destroy(objnametext);
+        clickTracking.totalClicks = 0;
     }
 }
