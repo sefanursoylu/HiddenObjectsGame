@@ -7,6 +7,7 @@ public class clickTracking : MonoBehaviour
     public static int totalClicks = 0;
     public KeyCode mouseClick;
     public int penaltyClicks;
+    public int penaltyTime;
 
     private timer timerScript;
 
@@ -24,9 +25,9 @@ public class clickTracking : MonoBehaviour
 
         if (totalClicks >= penaltyClicks)
         {
+            totalClicks = 0;
             Debug.Log("MINUS 10 SECONDS");
-            //timerScript.time -= 10 * Time.deltaTime;
-            //timerScript.time -= Time.deltaTime;
+            timerScript.time -= penaltyTime;
         }
 
         Debug.Log(totalClicks);

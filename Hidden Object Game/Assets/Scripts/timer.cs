@@ -15,7 +15,7 @@ public class timer : MonoBehaviour
             if (time <= 0.0f)
             {
                 Debug.Log("YOU LOSE!");
-                SceneManager.LoadScene("SefaScene");
+                Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
             }
         }
     }
