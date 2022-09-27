@@ -535,6 +535,7 @@ GameObject:
   m_Component:
   - component: {fileID: 906173685}
   - component: {fileID: 906173684}
+  - component: {fileID: 906173686}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -556,6 +557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseClick: 323
   penaltyClicks: 5
+  penaltyTime: 10
 --- !u!4 &906173685
 Transform:
   m_ObjectHideFlags: 0
@@ -571,6 +573,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &906173686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906173683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa7d73e258ad60e49b37f81db1c6a608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 60
 --- !u!1 &921577817
 GameObject:
   m_ObjectHideFlags: 0
