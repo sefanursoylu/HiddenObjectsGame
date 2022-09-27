@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class timer : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class timer : MonoBehaviour
             if (time <= 0.0f)
             {
                 Debug.Log("YOU LOSE!");
+                SceneManager.LoadScene("SefaScene");
             }
         }
     }
