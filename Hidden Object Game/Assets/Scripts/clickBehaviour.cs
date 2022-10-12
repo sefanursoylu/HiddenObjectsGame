@@ -6,7 +6,7 @@ public class clickBehaviour : MonoBehaviour
 {
     public static string nameofobj;
     public GameObject objnametext;
-
+    public Transform successClick;
 
     void Start()
     {
@@ -25,5 +25,7 @@ public class clickBehaviour : MonoBehaviour
         Destroy(gameObject);
         Destroy(objnametext);
         clickTracking.totalClicks = 0;
+
+        Instantiate(successClick, transform.position, transform.rotation);
     }
 }
